@@ -1,0 +1,7 @@
+{
+
+    "scripts": {
+      "dev": "python3 -m http.server 9000",
+      "deploy":"rsync -av  -e \"ssh -i \"~/Desktop/monitoreo.pem\"\" -r * ec2-user@ec2-54-235-235-219.compute-1.amazonaws.com:/usr/share/nginx/html/incode"
+    }
+  }
